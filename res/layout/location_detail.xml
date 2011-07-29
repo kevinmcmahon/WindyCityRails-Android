@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="wrap_content">
+	<RelativeLayout
+	    android:layout_width="fill_parent"
+    	android:layout_height="?android:attr/listPreferredItemHeight"    
+    	android:orientation="vertical" android:gravity="center_horizontal" >
+  	  <com.github.droidfu.widgets.WebImageView
+		        android:id="@+id/picture_location_detail"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:padding="10dp" />
+  	  <TextView android:id="@+id/venue_location_detail" 
+	  			android:layout_width="fill_parent" 
+	  			android:layout_height="wrap_content"
+	  			android:padding="10dp"
+	  			android:layout_below="@id/picture_location_detail" 
+	  			style="@style/detail_location_name" />
+	  <TextView android:id="@+id/address_location_detail" 
+	  			android:layout_width="fill_parent" 
+	  			android:layout_height="wrap_content"
+	  			android:padding="10dp" 
+	  			android:layout_below="@id/venue_location_detail"
+	  			style="@style/detail_address" />
+	<Button
+		android:id="@+id/directions_button_location_detail" 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content" 
+		android:layout_below="@id/address_location_detail"
+		android:padding="10dp"
+		android:text="@string/directions_button" 
+		android:textSize="21sp"
+		/>
+	</RelativeLayout>
+</ScrollView>

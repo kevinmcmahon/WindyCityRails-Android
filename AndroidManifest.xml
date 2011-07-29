@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="org.windycityrails"
+      android:versionCode="2"
+      android:versionName="1.0">
+    <uses-sdk android:minSdkVersion="8"/>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <application android:icon="@drawable/wcr_icon"
+    			 android:label="@string/app_name" 
+    			 android:name=".WindyCityRailsApplication"
+				 android:allowClearUserData="true" 
+				 android:theme="@android:style/Theme.NoTitleBar">
+	 	<uses-library android:name="com.google.android.maps" />
+		<permission android:name="android.permission.INTERNET" />
+    	
+        <activity android:name=".activities.MainActivity"
+                  android:label="@string/app_name"
+                  android:theme="@style/MyTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>    
+        <activity android:name=".activities.SessionList">
+        	<intent-filter>
+        		<category android:name="android.intent.category.DEFAULT" />
+        		<action android:name="org.windycityrails.VIEW_SESSION_LIST" />
+        	</intent-filter>
+        </activity>
+        <activity android:name=".activities.SessionDetail">
+        	<intent-filter>
+        		<category android:name="android.intent.category.DEFAULT" />
+        		<action android:name="org.windycityrails.VIEW_SESSION_DETAIL" />
+        	</intent-filter>
+        </activity>
+        <activity android:name=".activities.GoogleMap" />
+        <activity android:name=".activities.Floorplan" />
+        <activity android:name=".activities.MapTab" />
+        <activity android:name=".activities.About">
+        	<intent-filter>
+        		<category android:name="android.intent.category.DEFAULT" />
+        		<action android:name="org.windycityrails.VIEW_ABOUT_DETAIL" />
+        	</intent-filter>
+        </activity>
+        <activity android:name=".activities.SponsorsList">
+        	<intent-filter>
+        		<category android:name="android.intent.category.DEFAULT" />
+        		<action android:name="org.windycityrails.VIEW_SPONSOR_LIST" />
+        	</intent-filter>
+        </activity>
+        <activity android:name=".activities.SponsorDetail">
+        	<intent-filter>
+        		<category android:name="android.intent.category.DEFAULT" />
+        		<action android:name="org.windycityrails.VIEW_SPONSOR_DETAIL" />
+        	</intent-filter>
+        </activity>
+        <activity android:name=".activities.LocationDetail">
+        	<intent-filter>
+        		<category android:name="android.intent.category.DEFAULT" />
+        		<action android:name="org.windycityrails.VIEW_LOCATION_DETAIL" />
+        	</intent-filter>
+        </activity>
+        <service android:name=".service.ConferenceDataService"></service>
+    </application>
+</manifest>

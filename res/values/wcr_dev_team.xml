@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <string-array name="dev_team">
+        <item>Jeff Cohen</item>
+		<item>Stan Fisher</item>
+		<item>Justin Love</item>
+		<item>Mike Rubin</item>
+		<item>Kevin Zolkiewicz</item>
+    </string-array>
+</resources>

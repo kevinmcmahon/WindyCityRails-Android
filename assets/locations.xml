@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<locations version="1">        
+ 	<location name="WindyCityRails"> 
+	  <venue_short>The Westin</venue_short> 
+	  <venue_long>The Westin Chicago River North</venue_long> 
+	  <address>320 N Dearborn St
+Chicago, IL 60654</address> 
+	  <lat>41.888233</lat> 
+	  <long>-87.63014</long> 
+	  <photo>http://windycityrails.org/assets/4c7ffc92dabe9d0b40000047/thewestin.jpg</photo> 
+	</location>
+</locations>
