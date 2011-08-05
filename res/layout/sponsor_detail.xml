@@ -7,7 +7,7 @@
 	  android:layout_height="?android:attr/listPreferredItemHeight"       
 	  android:orientation="vertical" android:gravity="center_horizontal" 
 	  android:padding="10sp">
-	<com.github.droidfu.widgets.WebImageView
+	<org.windycityrails.ui.WebImageView
 		android:id="@+id/sponsor_image_detail"
 		android:layout_width="fill_parent" 
 		android:layout_height="wrap_content"

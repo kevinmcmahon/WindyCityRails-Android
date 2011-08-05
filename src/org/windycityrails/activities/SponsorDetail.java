@@ -4,9 +4,8 @@ import org.windycityrails.Constants;
 import org.windycityrails.R;
 import org.windycityrails.WindyCityRailsApplication;
 import org.windycityrails.model.Sponsor;
+import org.windycityrails.ui.WebImageView;
 import org.windycityrails.util.Network;
-
-import com.github.droidfu.widgets.WebImageView;
 
 import roboguice.activity.RoboActivity;
 import roboguice.inject.InjectView;

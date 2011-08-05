@@ -36,9 +36,6 @@ public class SegmentedButton extends RadioButton {
         
         float currentHeight = textPaint.measureText("x");
 
-        // final float scale =
-        // getContext().getResources().getDisplayMetrics().density;
-        // float textSize = (int) (TEXT_SIZE * scale + 0.5f);
         textPaint.setTextSize(this.getTextSize());
         textPaint.setTextAlign(Paint.Align.CENTER);
 

@@ -40,7 +40,7 @@
 	  	  android:layout_width="wrap_content" android:layout_height="fill_parent"
 		  android:orientation="horizontal" android:gravity="center_horizontal" 
 		  android:layout_below="@+id/bio_header">
-  	      <com.github.droidfu.widgets.WebImageView
+  	      <org.windycityrails.ui.WebImageView
 			        android:id="@+id/speaker_icon"
 			        android:layout_width="120px"
 			        android:layout_height="120px"

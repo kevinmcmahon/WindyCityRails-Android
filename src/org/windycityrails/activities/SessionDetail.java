@@ -6,7 +6,7 @@ import org.windycityrails.WindyCityRailsApplication;
 import org.windycityrails.model.Session;
 import org.windycityrails.util.Network;
 
-import com.github.droidfu.widgets.WebImageView;
+import org.windycityrails.ui.WebImageView;
 
 import roboguice.activity.RoboActivity;
 import roboguice.inject.InjectView;
