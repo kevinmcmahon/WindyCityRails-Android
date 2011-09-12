@@ -46,7 +46,7 @@ public class MainActivity extends RoboTabActivity {
                       .setContent(intent);
         tabHost.addTab(spec);
 
-        intent = new Intent().setClass(this, MapTab.class);
+        intent = new Intent().setClass(this, GoogleMap.class);
         spec = tabHost.newTabSpec("maps").setIndicator("Maps",
                           res.getDrawable(R.drawable.ic_tab_globe))
                       .setContent(intent);
