@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<color name="wc_black">#100000</color>
-	
-	<color name="wc_main_unsel_end">#7D0000</color>
-	<color name="wc_main_unsel_center">#8C0000</color>
+	<color name="wc_black">#000000</color>
+	<color name="wc_text">@color/wc_black</color>
 	<color name="wc_main">#9C0000</color>
-	<color name="wc_main_sel_center">#A61919</color>
-	<color name="wc_main_sel_end">#B03333</color>
-
-	<color name="wc_white1">#EBCCCC</color>
-	<color name="wc_white">#F5E6E6</color>
+	<color name="wc_white">#FFFFFF</color>
 </resources>

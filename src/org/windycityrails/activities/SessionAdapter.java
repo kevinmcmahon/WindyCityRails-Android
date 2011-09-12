@@ -34,7 +34,8 @@ public class SessionAdapter extends ArrayAdapter<Session> {
             LayoutInflater vi = (LayoutInflater) this.getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             v = vi.inflate(R.layout.session_row, null);
         }
-        Session s = sessions.get(position);
+        
+		Session s = sessions.get(position);
         if (s != null) {
             TextView tt = (TextView) v.findViewById(R.id.toptext);
             TextView bt = (TextView) v.findViewById(R.id.bottomtext);
@@ -49,7 +50,4 @@ public class SessionAdapter extends ArrayAdapter<Session> {
         }
         return v;
 	}
-	
-	
-
 }

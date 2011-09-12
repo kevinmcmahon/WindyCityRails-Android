@@ -5,8 +5,7 @@
   <RelativeLayout
 	  android:layout_width="fill_parent"
 	  android:layout_height="?android:attr/listPreferredItemHeight"       
-	  android:orientation="vertical" android:gravity="center_horizontal" 
-	  android:padding="10sp">
+	  android:orientation="vertical" android:gravity="center_horizontal" >
 	<org.windycityrails.ui.WebImageView
 		android:id="@+id/sponsor_image_detail"
 		android:layout_width="fill_parent" 
@@ -16,19 +15,17 @@
 		android:layout_margin="10sp" />
 	<TextView
 		android:id="@+id/sponsor_name_detail" 
-		android:padding="10dp"
+		android:padding="6dp"
 		android:layout_width="fill_parent" 
 		android:layout_height="wrap_content"		 
-		android:layout_below="@id/sponsor_image_detail"
-		android:layout_margin="10sp" 
+		android:layout_below="@id/sponsor_image_detail" 
 		style="@style/wcListSeparator" />
 	<TextView 
 		android:id="@+id/sponsor_description_detail"
 		android:layout_width="wrap_content" 
 		android:layout_height="wrap_content"
 		android:layout_below="@id/sponsor_name_detail"
-		android:layout_margin="10sp" 
-		style="@style/detail_description"  />
+		style="@style/sponsor_detail_description"  />
 	<Button
 		android:id="@+id/sponsor_url_detail" 
 		android:layout_width="fill_parent"

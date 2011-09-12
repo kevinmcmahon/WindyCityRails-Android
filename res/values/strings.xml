@@ -2,7 +2,7 @@
 <resources>
     <string name="app_name">WindyCityRails</string>
     <string name="session_header_text">Session Description</string>
-    <string name="bio_header_text">About the Speaker</string>
+    <string name="bio_header_text">Speaker</string>
     <string name="sponsor_url_button">View Web Site</string>
     <string name="directions_button">Get Directions</string>
     <string name="session_website_button_text">Web Site</string>

@@ -12,7 +12,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 public class SponsorAdapter extends ArrayAdapter<Sponsor> {
@@ -44,9 +43,6 @@ public class SponsorAdapter extends ArrayAdapter<Sponsor> {
 			if (sponsorName != null) {
 				sponsorName.setText(s.name);
 			}
-			
-			ImageView di = (ImageView) v.findViewById(R.id.disclosure);
-			di.setImageResource(R.drawable.disclosure);
 		}
 		
 		return v;

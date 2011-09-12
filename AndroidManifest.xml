@@ -11,13 +11,12 @@
     			 android:label="@string/app_name" 
     			 android:name=".WindyCityRailsApplication"
 				 android:allowClearUserData="true" 
-				 android:theme="@android:style/Theme.NoTitleBar">
+				 android:theme="@style/WcrTheme">
 	 	<uses-library android:name="com.google.android.maps" />
 		<permission android:name="android.permission.INTERNET" />
     	
         <activity android:name=".activities.MainActivity"
-                  android:label="@string/app_name"
-                  android:theme="@style/MyTheme">
+                  android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -36,8 +35,6 @@
         	</intent-filter>
         </activity>
         <activity android:name=".activities.GoogleMap" />
-        <activity android:name=".activities.Floorplan" />
-        <activity android:name=".activities.MapTab" />
         <activity android:name=".activities.About">
         	<intent-filter>
         		<category android:name="android.intent.category.DEFAULT" />

@@ -3,16 +3,26 @@
     <style name="detail_title">
         <item name="android:textSize">24sp</item>
         <item name="android:textStyle">bold</item>
-        <item name="android:textColor">@color/wc_white</item>
+        <item name="android:textColor">@color/wc_text</item>
     </style>
     <style name="detail_presenter">
         <item name="android:textSize">21sp</item>
     </style>
     <style name="detail_bio">
-        <item name="android:textSize">16sp</item>
+      <item name="android:typeface">serif</item>
+       	<item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/wc_text</item>
     </style>
     <style name="detail_description">
+    	<item name="android:typeface">serif</item>
         <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/wc_text</item>
+    </style>
+    <style name="sponsor_detail_description" parent="detail_description">
+    	<item name="android:paddingLeft">6dp</item>
+		<item name="android:paddingRight">6dp</item>
+		<item name="android:paddingTop">10dp</item>
+		<item name="android:paddingBottom">10dp</item>
     </style>
     <style name="detail_header">
         <item name="android:textSize">21sp</item>
@@ -30,12 +40,18 @@
         <item name="android:textStyle">bold</item>
         <item name="android:gravity">center_horizontal</item>
     </style>
-    <style name="MyTheme" parent="@android:style/Theme.NoTitleBar">
+    <style name="WcrTheme" parent="@android:style/Theme.Light.NoTitleBar">
     	<item name="android:tabWidgetStyle">@style/LightTabWidget</item>
 	</style>
 	<style name="LightTabWidget" parent="@android:style/Widget.TabWidget">
-    	<!-- set textColor to red, so you can verify that it applied. -->
 	    <item name="android:textColor">@drawable/tab_main_selector</item>
+	    
+	</style>
+	<style name="disclosure_image">
+		<item name="android:layout_alignParentRight">true</item>
+		<item name="android:layout_centerInParent">true</item>
+		<item name="android:paddingRight">4dp</item>
+		<item name="android:src">@drawable/disclosure</item>
 	</style>
 	<style name="wcListSeparator" parent="@android:attr/listSeparatorTextViewStyle">
 	    <item name="android:layout_height">wrap_content</item>
@@ -50,15 +66,6 @@
 	    <item name="android:shadowDy">1</item>
 	    <item name="android:textStyle">bold</item>
 	    <item name="android:textSize">18dp</item>
-	    <item name="android:textColor">@color/wc_white</item>
-  </style>
-  <style name="floorplan_na_style">
-  		<item name="android:paddingTop">2dip</item>
-	    <item name="android:paddingBottom">3dip</item>
-	    <item name="android:paddingLeft">5dip</item>
-  		<!--  <item name="android:gravity">center</item> -->
-  	    <item name="android:textStyle">bold</item>
-	    <item name="android:textSize">36dp</item>
 	    <item name="android:textColor">@color/wc_white</item>
   </style>
 </resources>

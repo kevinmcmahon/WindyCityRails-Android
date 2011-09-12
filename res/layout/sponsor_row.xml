@@ -12,13 +12,13 @@
 		android:layout_alignParentLeft="true"
 		android:layout_centerVertical="true"
 		android:textSize="24sp"
-		android:padding="6sp"
-		android:textColor="@color/wc_white"
+		android:paddingLeft="6sp"
+		android:paddingTop="10sp"
+		android:paddingBottom="10sp"
+		android:textColor="@color/wc_text"
 	/>
 	<ImageView
-	android:layout_height="fill_parent" 
-	android:layout_width="wrap_content"
-	android:layout_alignParentRight="true"
-	android:layout_centerInParent="true"
-	android:id="@+id/disclosure" />
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content" 
+		style="@style/disclosure_image" />
 </RelativeLayout>

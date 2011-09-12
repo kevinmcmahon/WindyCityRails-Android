@@ -10,16 +10,12 @@
 	  			android:layout_height="wrap_content"
 	  			android:padding="10dp" 
 	  			style="@style/detail_title" />
-	  <TextView android:id="@+id/presenter" 
-	   			android:layout_width="fill_parent" android:layout_height="wrap_content"
-	   			android:padding="10dp" android:layout_below="@+id/title"
-	   			style="@style/detail_presenter"/>
 	  <TextView android:id="@+id/desc_header"
 	  			android:text="@string/session_header_text"
 	  			android:padding="10dp"
 	  			android:layout_width="fill_parent" 
 	  			android:layout_height="wrap_content"
-	  			android:layout_below="@+id/presenter"
+	  			android:layout_below="@+id/title"
 	  			style="@style/wcListSeparator"/>
 	  <TextView android:id="@+id/description" 
 	  			android:layout_width="fill_parent" android:layout_height="wrap_content"
@@ -29,7 +25,7 @@
 	 	android:id="@+id/bio_header"	
 		android:layout_width="fill_parent"	
 		android:layout_height="wrap_content"	
-		android:padding="10px"
+		android:padding="10dp"
 		style="@style/wcListSeparator" 
 		android:text="@string/bio_header_text"
 		android:textSize="18dp"
@@ -45,18 +41,26 @@
 			        android:layout_width="120px"
 			        android:layout_height="120px"
 			        android:padding="10dp" />
-		  <TextView android:id="@+id/bio" 
+		<LinearLayout android:orientation="vertical"
+		  android:layout_width="wrap_content" android:layout_height="fill_parent"
+		  android:layout_toRightOf="@+id/speaker_icon" >
+			  <TextView android:id="@+id/presenter" 
+		   			android:layout_width="fill_parent" android:layout_height="wrap_content"
+		   			android:padding="10dp" 
+		   			style="@style/detail_presenter"/>
+		</LinearLayout>
+	</RelativeLayout>
+	<TextView android:id="@+id/bio" 
 		  			android:layout_width="wrap_content" 
 		  			android:layout_height="wrap_content"
-		  			android:layout_toRightOf="@+id/speaker_icon"
+		  			android:layout_below="@+id/bio_layout_block"
 		  			android:padding="10dp" 
 		  			style="@style/detail_bio" />
-	</RelativeLayout>
 	<Button
 		android:id="@+id/session_website_button" 
 		android:layout_width="fill_parent"
 		android:layout_height="wrap_content" 
-		android:layout_below="@id/bio_layout_block"
+		android:layout_below="@id/bio"
 		android:padding="10dp"
 		android:text="@string/session_website_button_text" 
 		android:textSize="16sp"/>	
