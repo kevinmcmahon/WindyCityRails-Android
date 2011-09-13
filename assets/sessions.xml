@@ -1,211 +1,211 @@
-<?xml version="1.0"?> 
- 
-<sessions version="1"> 
+<?xml version="1.0"?>
+
+<sessions version="1">
   
   
-  <category name="Regular Sessions"> 
+  <category name="Regular Sessions">
           
-    <session> 
-      <title>High Performance Ruby: Threading Versus Evented</title> 
-      <speaker> 
-        <name>Dr Nic Williams</name> 
-        <company>Engine Yard</company> 
+    <session>
+      <title>High Performance Ruby: Threading Versus Evented</title>
+      <speaker>
+        <name>Dr Nic Williams</name>
+        <company>Engine Yard</company>
         <bio>Dr Nic has written, maintained and contributed to over a 100 open source projects, across the languages/domains of Ruby, JavaScript, Objective-C and TextMate bundles. He is Vice President of Technology at Engine Yard and is responsible for its large Open Source program. He has been presenting at International Conferences since 2007. He is also Australian and thinks he is funny. Rumor has it that the real reason for his recent move to Engine Yard HQ in California was to further his fledgeling comedy career.
-</bio> 
-        <headshot>http://windycityrails.org/assets/4e172ccadabe9d197000671f/williams.jpg</headshot> 
+</bio>
+        <headshot>http://windycityrails.org/assets/4e172ccadabe9d197000671f/williams.jpg</headshot>
         
-      </speaker> 
+      </speaker>
       <description>Great developers are on a constant quest for knowledge, and knowledge begins with questions. “Do I need to learn about EventMachine or node.js? Can I use threads? What is so good or bad about threading in Ruby 1.8, Ruby 1.9, JRuby and Rubinius 2.0? What choices do I need to make, how different does my code look, and how do I do testing?”
- 
+
 Dr. Nic Williams has approached many developers with these questions. He even hosted EM RubyConf during RailsConf 2011 in order to gather the brightest minds in the Ruby community. Join Dr. Nic as he shares answers gathered during this recent quest for knowledge.
-</description> 
-      <start_time>9:00am</start_time> 
-      <end_time>9:45am</end_time> 
-      <links> 
-            <speaker_website>http://drnicwilliams.com/</speaker_website> 
-            <speaker_twitter>http://twitter.com/drnic</speaker_twitter> 
-            <slides_url></slides_url> 
-            <rate_url></rate_url> 
-            <video_url></video_url> 
-      </links> 
-    </session> 
+</description>
+      <start_time>9:00am</start_time>
+      <end_time>9:45am</end_time>
+      <links>
+            <speaker_website>http://drnicwilliams.com/</speaker_website>
+            <speaker_twitter>http://twitter.com/drnic</speaker_twitter>
+            <slides_url></slides_url>
+            <rate_url></rate_url>
+            <video_url></video_url>
+      </links>
+    </session>
     
-    <session> 
-      <title>Faster Page Performance</title> 
-      <speaker> 
-        <name>John McCaffrey</name> 
-        <company>RailsPerformance</company> 
+    <session>
+      <title>Faster Page Performance</title>
+      <speaker>
+        <name>John McCaffrey</name>
+        <company>RailsPerformance</company>
         <bio>John McCaffrey has been developing applications since 1998, and is passionate about improving application performance and software development performance. John is an independent consultant focusing on bringing Rails applications to market quickly.
-</bio> 
-        <headshot>http://windycityrails.org/assets/4c768149dabe9d7360000001/mccaffrey.jpg</headshot> 
+</bio>
+        <headshot>http://windycityrails.org/assets/4c768149dabe9d7360000001/mccaffrey.jpg</headshot>
         
-      </speaker> 
+      </speaker>
       <description>Most developers know how to improve initial page load performance. We know how to follow recommendations from tools like yslow and page speed. Still, we struggle with slow performance after pages are loaded.
- 
+
 This talk will review:
- 
- 
+
+
   The basic rules from yslow/page speed (and when to break them)
   Tools for finding bottlenecks and slow javascript
   Common javascript performance patterns and how to fix them
   Architectural and design approaches to improve performance
   Considerations for Mobile performance
   Performance features in HTML5 and Rails 3
- 
-</description> 
-      <start_time>10:00am</start_time> 
-      <end_time>10:45am</end_time> 
-      <links> 
-            <speaker_website>http://railsperformance.blogspot.com</speaker_website> 
-            <speaker_twitter>http://twitter.com/j_mccaffrey</speaker_twitter> 
-            <slides_url></slides_url> 
-            <rate_url></rate_url> 
-            <video_url></video_url> 
-      </links> 
-    </session> 
+
+</description>
+      <start_time>10:00am</start_time>
+      <end_time>10:45am</end_time>
+      <links>
+            <speaker_website>http://railsperformance.blogspot.com</speaker_website>
+            <speaker_twitter>http://twitter.com/j_mccaffrey</speaker_twitter>
+            <slides_url></slides_url>
+            <rate_url></rate_url>
+            <video_url></video_url>
+      </links>
+    </session>
     
-    <session> 
-      <title>GitHub Flavored Ruby</title> 
-      <speaker> 
-        <name>Tom Preston-Warner</name> 
-        <company>GitHub</company> 
+    <session>
+      <title>GitHub Flavored Ruby</title>
+      <speaker>
+        <name>Tom Preston-Werner</name>
+        <company>GitHub</company>
         <bio>Tom Preston-Werner is a cofounder of GitHub, the social coding phenomenon that has captured the imaginations of hackers around the globe. He is also a serial entrepreneur having sold Gravatar to Automattic and run a web/graphic design firm, Cube6 Media, out of San Diego.
-</bio> 
-        <headshot>http://windycityrails.org/assets/4e1b475cdabe9d3a2e007f6e/tomstare.jpg</headshot> 
+</bio>
+        <headshot>http://windycityrails.org/assets/4e1b475cdabe9d3a2e007f6e/tomstare.jpg</headshot>
         
-      </speaker> 
+      </speaker>
       <description>It has been said that software development is a constant battle against complexity. GitHub has built several large systems over the past three years, all while engaging in the proverbial battle against complexity. Things like tight coupling, insufficient testing or documentation, lack of versioning discipline, and underspecified design documents can easily lead developers down a path of ruin. This talk will cover many of the techniques GitHub uses to defend against complexity in Ruby systems, including Readme Driven Development, Semantic Versioning, TomDoc, Git/GitHub workflow, modularization, metrics, and exception reporting.
-</description> 
-      <start_time>11:00am</start_time> 
-      <end_time>11:45am</end_time> 
-      <links> 
-            <speaker_website>http://tom.preston-werner.com/</speaker_website> 
-            <speaker_twitter>http://twitter.com/mojombo/</speaker_twitter> 
-            <slides_url></slides_url> 
-            <rate_url></rate_url> 
-            <video_url></video_url> 
-      </links> 
-    </session> 
+</description>
+      <start_time>11:00am</start_time>
+      <end_time>11:45am</end_time>
+      <links>
+            <speaker_website>http://tom.preston-werner.com/</speaker_website>
+            <speaker_twitter>http://twitter.com/mojombo/</speaker_twitter>
+            <slides_url></slides_url>
+            <rate_url></rate_url>
+            <video_url></video_url>
+      </links>
+    </session>
     
-    <session> 
-      <title>Lunch</title> 
-      <speaker> 
-        <name>Various Speakers</name> 
-        <company></company> 
-        <bio></bio> 
-        <headshot>http://windycityrails.org</headshot> 
+    <session>
+      <title>Lunch</title>
+      <speaker>
+        <name>Various Speakers</name>
+        <company></company>
+        <bio></bio>
+        <headshot>http://windycityrails.org</headshot>
         
-      </speaker> 
+      </speaker>
       <description>You&amp;rsquo;ve filled your brain, now fill your stomach! Join us in Ballroom C, or grab your lunch and head outside to enjoy Chicago&amp;rsquo;s beautiful riverfront while you eat.
-</description> 
-      <start_time>11:45am</start_time> 
-      <end_time>1:00pm</end_time> 
-      <links> 
-            <speaker_website></speaker_website> 
-            <speaker_twitter></speaker_twitter> 
-            <slides_url></slides_url> 
-            <rate_url></rate_url> 
-            <video_url></video_url> 
-      </links> 
-    </session> 
+</description>
+      <start_time>11:45am</start_time>
+      <end_time>1:00pm</end_time>
+      <links>
+            <speaker_website></speaker_website>
+            <speaker_twitter></speaker_twitter>
+            <slides_url></slides_url>
+            <rate_url></rate_url>
+            <video_url></video_url>
+      </links>
+    </session>
     
-    <session> 
-      <title>Lightning Talks</title> 
-      <speaker> 
-        <name>Various Speakers</name> 
-        <company></company> 
-        <bio></bio> 
-        <headshot>http://windycityrails.org</headshot> 
+    <session>
+      <title>Lightning Talks</title>
+      <speaker>
+        <name>Various Speakers</name>
+        <company></company>
+        <bio></bio>
+        <headshot>http://windycityrails.org</headshot>
         
-      </speaker> 
+      </speaker>
       <description>Sessions TBA
-</description> 
-      <start_time>1:00pm</start_time> 
-      <end_time>2:00pm</end_time> 
-      <links> 
-            <speaker_website></speaker_website> 
-            <speaker_twitter></speaker_twitter> 
-            <slides_url></slides_url> 
-            <rate_url></rate_url> 
-            <video_url></video_url> 
-      </links> 
-    </session> 
+</description>
+      <start_time>1:00pm</start_time>
+      <end_time>2:00pm</end_time>
+      <links>
+            <speaker_website></speaker_website>
+            <speaker_twitter></speaker_twitter>
+            <slides_url></slides_url>
+            <rate_url></rate_url>
+            <video_url></video_url>
+      </links>
+    </session>
     
-    <session> 
-      <title>CoffeeScript: A New Brew</title> 
-      <speaker> 
-        <name>David Kinney</name> 
-        <company>Redpoint Technologies</company> 
+    <session>
+      <title>CoffeeScript: A New Brew</title>
+      <speaker>
+        <name>David Kinney</name>
+        <company>Redpoint Technologies</company>
         <bio>David is a Software Architect at Redpoint Technologies and the lead organizer for SecondConf. His professional web application developer career traces back more than a decade, originally writing Apache modules and PERL CGI scripts, then adopting Java in its infancy, jumping to Ruby shortly after Rails went 1.0, and now investigating Node.js, SproutCore, and CouchDB. In his free time, David hacks on Arduino projects with his daughter and frequents local meetups.
-</bio> 
-        <headshot>http://windycityrails.org/assets/4e1b47b6dabe9d2c8c00e083/avatarvector128.png</headshot> 
+</bio>
+        <headshot>http://windycityrails.org/assets/4e1b47b6dabe9d2c8c00e083/avatarvector128.png</headshot>
         
-      </speaker> 
+      </speaker>
       <description>JavaScript is the assembly language of the web, and the first generation of higher-level languages built on top of that foundation has arrived. CoffeeScript is an exciting entry in this nascent field, embracing the best of JavaScript, extending it with collection operators, and wrapping it all in a more succinct, Ruby-ish grammar. CoffeeScript&amp;rsquo;s benefits have proven so compelling that it is supported in the core of Rails 3.1. We will introduce CoffeeScript&amp;rsquo;s core syntax &amp;ndash; starting with a JavaScript function and tearing it apart until it&amp;rsquo;s an elegant few lines of CoffeeScript. Then we will cover CoffeeScript&amp;rsquo;s improvements for object-oriented programming, and finally review how CoffeeScript is used in a Rails 3.1 project.
-</description> 
-      <start_time></start_time> 
-      <end_time></end_time> 
-      <links> 
-            <speaker_website></speaker_website> 
-            <speaker_twitter>http://twitter.com/dlkinney</speaker_twitter> 
-            <slides_url></slides_url> 
-            <rate_url></rate_url> 
-            <video_url></video_url> 
-      </links> 
-    </session> 
+</description>
+      <start_time>2:15pm</start_time>
+      <end_time>3:00pm</end_time>
+      <links>
+            <speaker_website></speaker_website>
+            <speaker_twitter>http://twitter.com/dlkinney</speaker_twitter>
+            <slides_url></slides_url>
+            <rate_url></rate_url>
+            <video_url></video_url>
+      </links>
+    </session>
     
-    <session> 
-      <title>Regular Expressions Are Your Friend!</title> 
-      <speaker> 
-        <name>Aaron Kalin</name> 
-        <company>Hashrocket</company> 
+    <session>
+      <title>Regular Expressions Are Your Friend!</title>
+      <speaker>
+        <name>Aaron Kalin</name>
+        <company>Hashrocket</company>
         <bio>Aaron Kalin is a geek that has been programming since age 11 and has been hooked ever since. By day he&amp;rsquo;s working for Hashrocket in Chicago. By night you&amp;rsquo;ll see him hacking on everything from side projects to game servers. Occasionally he dresses up in a Stormtrooper costume for charity, cheering up sick kids in hospitals.
-</bio> 
-        <headshot>http://windycityrails.org/assets/4e1b4e8adabe9d692e0014a3/aaron.jpg</headshot> 
+</bio>
+        <headshot>http://windycityrails.org/assets/4e1b4e8adabe9d692e0014a3/aaron.jpg</headshot>
         
-      </speaker> 
+      </speaker>
       <description>Regular Expressions help you find that needle in the haystack, where Waldo might be, or the location of Jimmy Hoffa&amp;rsquo;s body. You&amp;rsquo;ll find them in most programming languages and tools, but they can do so much more than checking an e-mail address! We&amp;rsquo;ll go over the basics as well as advanced topics and you&amp;rsquo;re encouraged to follow along as the examples are shown.
-</description> 
-      <start_time>3:15pm</start_time> 
-      <end_time>4:00pm</end_time> 
-      <links> 
-            <speaker_website>http://martinisoftware.com</speaker_website> 
-            <speaker_twitter>http://twitter.com/martinisoft</speaker_twitter> 
-            <slides_url></slides_url> 
-            <rate_url></rate_url> 
-            <video_url></video_url> 
-      </links> 
-    </session> 
+</description>
+      <start_time>3:15pm</start_time>
+      <end_time>4:00pm</end_time>
+      <links>
+            <speaker_website>http://martinisoftware.com</speaker_website>
+            <speaker_twitter>http://twitter.com/martinisoft</speaker_twitter>
+            <slides_url></slides_url>
+            <rate_url></rate_url>
+            <video_url></video_url>
+      </links>
+    </session>
     
-    <session> 
-      <title>Literate Code</title> 
-      <speaker> 
-        <name>Steve Klabnik</name> 
-        <company></company> 
+    <session>
+      <title>Literate Code</title>
+      <speaker>
+        <name>Steve Klabnik</name>
+        <company></company>
         <bio>Steve is a Ruby Hero, software craftsman, and an aspiring digital humanities scholar. He spends most of his time contributing to Open Source projects, and maintains both Hackety Hack and Shoes.
-</bio> 
-        <headshot>http://windycityrails.org/assets/4e1b4f26dabe9d692a002335/steve.jpg</headshot> 
+</bio>
+        <headshot>http://windycityrails.org/assets/4e1b4f26dabe9d692a002335/steve.jpg</headshot>
         
-      </speaker> 
+      </speaker>
       <description>We have many metaphors for software: Code as art, code as craft, code as science. Steve finds another one particularly useful: Code as literature. As one example, when writing prose, you must consider your audience. When writing software, several audiences will &amp;lsquo;read&amp;rsquo; your work: the computer, your teammates, and end-users. Documentation must be written for multiple audiences as well. This is just one example of the parallel between the two.
- 
+
 In this talk, Steve will discuss programming as an act of composition, and how this mindset can be used to improve the code you write. He&amp;rsquo;ll point out some of the unique problems that composing software brings to the table, and how to address them.
-</description> 
-      <start_time></start_time> 
-      <end_time></end_time> 
-      <links> 
-            <speaker_website>http://steveklabnik.com</speaker_website> 
-            <speaker_twitter>http://twitter.com/steveklabnik</speaker_twitter> 
-            <slides_url></slides_url> 
-            <rate_url></rate_url> 
-            <video_url></video_url> 
-      </links> 
-    </session> 
+</description>
+      <start_time>4:15pm</start_time>
+      <end_time>5:00pm</end_time>
+      <links>
+            <speaker_website>http://steveklabnik.com</speaker_website>
+            <speaker_twitter>http://twitter.com/steveklabnik</speaker_twitter>
+            <slides_url></slides_url>
+            <rate_url></rate_url>
+            <video_url></video_url>
+      </links>
+    </session>
     
-  </category> 
+  </category>
   
-  <category name="Lightning Talks"> 
+  <category name="Lightning Talks">
           
-  </category> 
+  </category>
   
-</sessions> 
+</sessions>
