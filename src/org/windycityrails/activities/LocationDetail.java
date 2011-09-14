@@ -8,14 +8,13 @@ import com.github.droidfu.widgets.WebImageView;
 
 import roboguice.activity.RoboActivity;
 import roboguice.inject.InjectView;
+import roboguice.util.Ln;
 
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.widget.Button;
 import android.widget.TextView;
 
 public class LocationDetail extends RoboActivity {
@@ -25,14 +24,14 @@ public class LocationDetail extends RoboActivity {
 	@InjectView(R.id.picture_location_detail) private WebImageView photoView;
 	@InjectView(R.id.venue_location_detail) private TextView venueView;
 	@InjectView(R.id.address_location_detail) private TextView addressView;
-	@InjectView(R.id.directions_button_location_detail) private Button directionsButton;
+	@InjectView(R.id.directions_location_detail) private TextView directionsView;
 	
 	private Location location;
 	
 	@Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Log.v(Constants.LOGTAG, LocationDetail.CLASSTAG + " onCreate");
+        Ln.v(LocationDetail.CLASSTAG + " onCreate");
         
         setContentView(R.layout.location_detail);
         location = (Location) getIntent().getSerializableExtra(Constants.LOCATION_EXTRA);
@@ -43,14 +42,12 @@ public class LocationDetail extends RoboActivity {
         addressView.setText(addressText);
         
         if(location.photo != null && !location.photo.trim().equals("")) {
-        	Log.v(Constants.LOGTAG, LocationDetail.CLASSTAG + " photo text: "+ location.photo);
+        	Ln.v(LocationDetail.CLASSTAG + " photo text: "+ location.photo);
         	photoView.setImageUrl(location.photo);
         	photoView.loadImage();
-        	
-//        	new DownloadImageTask(photoView).execute(location.photo); 
         }
         
-        directionsButton.setOnClickListener(new OnClickListener() {
+        directionsView.setOnClickListener(new OnClickListener() {
 			
 			public void onClick(View v) {
 				Intent intent = new Intent(android.content.Intent.ACTION_VIEW, 

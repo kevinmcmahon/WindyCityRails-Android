@@ -13,10 +13,12 @@ import roboguice.inject.InjectView;
 
 import android.content.Intent;
 import android.net.Uri;
+import android.opengl.Visibility;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -28,8 +30,11 @@ public class SessionDetail extends RoboActivity {
 	@InjectView(R.id.presenter) private TextView presenterTextView;
 	@InjectView(R.id.description) private TextView descriptionTextView;
 	@InjectView(R.id.bio) private TextView speakerBioTextView;
-	@InjectView(R.id.session_website_button) private Button websiteButton;
-	@InjectView(R.id.session_twitter_button) private Button twitterButton;
+	@InjectView(R.id.session_website) private TextView websiteTextView;
+	@InjectView(R.id.session_twitter) private TextView twitterTextView;
+	@InjectView(R.id.session_website_disclosure) private ViewGroup websiteDisclosure;
+	@InjectView(R.id.session_twitter_disclosure) private ViewGroup twitterDisclosure;
+	@InjectView(R.id.session_disclosures) private ViewGroup disclosures;
 	@InjectView(R.id.bio_header) private TextView bioHeader;
 	
 	@Override
@@ -62,28 +67,34 @@ public class SessionDetail extends RoboActivity {
         }
         
         if(session.links.speakerWebsite != null && session.links.speakerWebsite != "") {
-        	websiteButton.setOnClickListener(new OnClickListener() {
+        	websiteTextView.setOnClickListener(new OnClickListener() {
 				public void onClick(View v) {
 					Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse(session.links.speakerWebsite));
 					startActivity(i);
 				}
 			});
+        	
         }
         else {
-        	websiteButton.setVisibility(View.INVISIBLE);
+        	websiteDisclosure.setVisibility(View.INVISIBLE);
         }
         
     	if(session.links.speakerTwitter != null && session.links.speakerTwitter != "") {
-    		twitterButton.setOnClickListener(new OnClickListener() {
+    		twitterTextView.setOnClickListener(new OnClickListener() {
 				
 				public void onClick(View v) {
 					Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse(session.links.speakerTwitter));
 					startActivity(i);
 				}
 			});
+    		
         }
         else {
-        	twitterButton.setVisibility(View.INVISIBLE);
+        	twitterDisclosure.setVisibility(View.INVISIBLE);
         }
+    	
+    	if(twitterDisclosure.getVisibility() == View.INVISIBLE && websiteDisclosure.getVisibility() == View.INVISIBLE) {
+    		disclosures.setVisibility(ViewGroup.INVISIBLE);
+    	}
     }
 }

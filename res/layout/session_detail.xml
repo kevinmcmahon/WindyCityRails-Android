@@ -56,21 +56,50 @@
 		  			android:layout_below="@+id/bio_layout_block"
 		  			android:padding="10dp" 
 		  			style="@style/detail_bio" />
-	<Button
-		android:id="@+id/session_website_button" 
-		android:layout_width="fill_parent"
-		android:layout_height="wrap_content" 
-		android:layout_below="@id/bio"
-		android:padding="10dp"
-		android:text="@string/session_website_button_text" 
-		android:textSize="16sp"/>	
-	<Button
-		android:id="@+id/session_twitter_button" 
-		android:layout_width="fill_parent"
-		android:layout_height="wrap_content" 
-		android:layout_below="@+id/session_website_button"
-		android:padding="10dp"
-		android:text="@string/session_twitter_button_text" 
-		android:textSize="16sp"/>	
+	<RelativeLayout
+			android:id="@+id/session_disclosures"
+	  		android:layout_width="fill_parent"
+	   		android:layout_height="fill_parent"
+	   		android:background="@color/wc_main_dark"
+	   		android:layout_below="@+id/bio">
+	<RelativeLayout
+	  		android:layout_width="fill_parent"
+	   		android:layout_height="fill_parent"
+	   		android:orientation="horizontal"
+	   		android:id="@+id/session_website_disclosure"
+	   		android:background="@color/wc_main"
+	   		android:layout_marginTop="2dp"
+	   		android:layout_marginBottom="2dp">
+	   		<TextView android:id="@+id/session_website"
+				android:layout_width="fill_parent" 
+	  			android:layout_height="wrap_content"
+	  			android:padding="10dp" 
+	  			style="@style/directions_location_detail"
+	  			android:text="@string/session_website_button_text"
+	  			/>
+	  		<ImageView 
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" 	
+				style="@style/disclosure_image"
+				/>
+	</RelativeLayout>
+	<RelativeLayout
+	 		android:layout_width="fill_parent"
+	  		android:layout_height="fill_parent"
+	  		android:orientation="horizontal"
+	  		android:id="@+id/session_twitter_disclosure"
+	  		android:layout_below="@+id/session_website_disclosure"
+	   		android:layout_marginBottom="2dp">
+	  		<TextView android:id="@+id/session_twitter"
+			android:layout_width="fill_parent" 
+	 			android:layout_height="wrap_content"
+	 			android:padding="10dp" 
+	 			style="@style/directions_location_detail"
+	 			android:text="@string/session_twitter_button_text" />
+	 		<ImageView 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 	
+			style="@style/disclosure_image" />
+	</RelativeLayout></RelativeLayout>
 	</RelativeLayout>
 </ScrollView>

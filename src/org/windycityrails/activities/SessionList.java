@@ -14,6 +14,7 @@ import org.windycityrails.model.SessionCategory;
 import org.windycityrails.util.XmlParser;
 
 import roboguice.activity.RoboListActivity;
+import roboguice.util.Ln;
 
 import com.commonsware.cwac.merge.MergeAdapter;
 
@@ -35,7 +36,7 @@ public class SessionList extends RoboListActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Log.v(Constants.LOGTAG, " " + SessionList.CLASSTAG + " onCreate");
+        Ln.v(SessionList.CLASSTAG + " onCreate");
         
         AssetManager assetManager = getAssets();
         InputStream stream = null;
@@ -46,10 +47,10 @@ public class SessionList extends RoboListActivity {
         	File cachedFile = new File(getCacheDir(), filename);
     		
     		if(cachedFile.exists()) {
-    			Log.i(Constants.LOGTAG,"Reading sessions data from cached copy.");
+    			Ln.i("Reading sessions data from cached copy.");
     			stream = new FileInputStream(cachedFile);
     		} else {
-    			Log.i(Constants.LOGTAG,"Reading sessions data from assets.");
+    			Ln.i("Reading sessions data from assets.");
     	        stream =  assetManager.open(filename);
     		}
         	
@@ -57,7 +58,7 @@ public class SessionList extends RoboListActivity {
             sessions = sessionCategories.get(0).sessions;
         } catch (IOException e) {
             // handle
-        	Log.e("SessionsActivity",e.getMessage());
+        	Ln.e(e,"SessionsActivity : "+ e.getMessage());
         }
         
         LayoutInflater vi = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);

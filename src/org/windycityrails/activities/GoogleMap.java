@@ -12,11 +12,7 @@ import org.windycityrails.util.XmlParser;
 
 import roboguice.activity.RoboMapActivity;
 
-import android.app.AlertDialog;
-import android.content.Context;
-import android.content.DialogInterface;
 import android.content.Intent;
-import android.content.DialogInterface.OnClickListener;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.util.Log;
