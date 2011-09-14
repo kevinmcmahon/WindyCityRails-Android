@@ -35,6 +35,8 @@
         	</intent-filter>
         </activity>
         <activity android:name=".activities.GoogleMap" />
+        <activity android:name=".activities.MapTab" />
+        <activity android:name=".activities.Floorplan"/>
         <activity android:name=".activities.About">
         	<intent-filter>
         		<category android:name="android.intent.category.DEFAULT" />

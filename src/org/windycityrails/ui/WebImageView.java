@@ -181,6 +181,11 @@ public class WebImageView extends ViewSwitcher {
    public void setImageUrl(String imageUrl) {
        this.imageUrl = imageUrl;
    }
+   
+   public void setImageUrl(String imageUrl, ScaleType scaleType) {
+       this.imageView.setScaleType(scaleType);
+	   this.imageUrl = imageUrl;
+   }
 
    /**
     * Often you have resources which usually have an image, but some don't. For these cases, use
