@@ -15,7 +15,7 @@
 		android:layout_margin="10sp" />
 	<TextView
 		android:id="@+id/sponsor_name_detail" 
-		android:padding="6dp"
+		android:padding="10dp"
 		android:layout_width="fill_parent" 
 		android:layout_height="wrap_content"		 
 		android:layout_below="@id/sponsor_image_detail" 
@@ -24,15 +24,36 @@
 		android:id="@+id/sponsor_description_detail"
 		android:layout_width="wrap_content" 
 		android:layout_height="wrap_content"
+		android:padding="10dp"
 		android:layout_below="@id/sponsor_name_detail"
 		style="@style/sponsor_detail_description"  />
-	<Button
-		android:id="@+id/sponsor_url_detail" 
-		android:layout_width="fill_parent"
-		android:layout_height="wrap_content" 
-		android:layout_below="@id/sponsor_description_detail"
-		android:padding="10dp"
-		android:text="@string/sponsor_url_button" 
-		android:textSize="21sp"/>	
+		<RelativeLayout
+			android:id="@+id/session_disclosures"
+	  		android:layout_width="fill_parent"
+	   		android:layout_height="fill_parent"
+	   		android:background="@color/wc_main_dark"
+	   		android:layout_below="@id/sponsor_description_detail"
+	   		>
+	<RelativeLayout
+	  		android:layout_width="fill_parent"
+	   		android:layout_height="fill_parent"
+	   		android:orientation="horizontal"
+	   		android:background="@color/wc_main"
+	   		android:layout_marginTop="2dp"
+	   		android:layout_marginBottom="2dp">
+	   		<TextView android:id="@+id/sponsor_website"
+				android:layout_width="fill_parent" 
+	  			android:layout_height="wrap_content"
+	  			android:padding="10dp" 
+	  			style="@style/directions_location_detail"
+	  			android:text="@string/sponsor_url_button" 
+	  			/>
+	  		<ImageView 
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" 	
+				style="@style/disclosure_image"
+				/>
+	</RelativeLayout>
+	 </RelativeLayout>
   </RelativeLayout>
 </ScrollView>

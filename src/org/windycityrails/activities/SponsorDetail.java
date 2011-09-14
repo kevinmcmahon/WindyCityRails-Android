@@ -38,7 +38,7 @@ public class SponsorDetail extends RoboActivity {
 		TextView description = (TextView) findViewById(R.id.sponsor_description_detail);
 		description.setText(sponsor.description);
 
-		Button url = (Button) findViewById(R.id.sponsor_url_detail);
+		TextView url = (TextView) findViewById(R.id.sponsor_website);
 		url.setOnClickListener(new TextView.OnClickListener() {
 
 			public void onClick(View v) {
