@@ -2,14 +2,14 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
 	android:layout_width="fill_parent" android:layout_height="wrap_content">
 	<LinearLayout
+		android:id="@+id/location_details_container"
 	    android:layout_width="fill_parent"
     	android:layout_height="?android:attr/listPreferredItemHeight"    
     	android:orientation="vertical" >
   	  <com.github.droidfu.widgets.WebImageView
 		        android:id="@+id/picture_location_detail"
 		        android:layout_width="fill_parent"
-		        android:layout_height="wrap_content"
-		        android:padding="10dp" />
+		        android:layout_height="wrap_content"/>
   	  <TextView android:id="@+id/venue_location_detail" 
 	  			android:layout_width="fill_parent" 
 	  			android:layout_height="wrap_content"

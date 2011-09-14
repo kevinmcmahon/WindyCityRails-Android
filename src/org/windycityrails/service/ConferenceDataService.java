@@ -12,11 +12,12 @@ import java.net.URLConnection;
 import org.windycityrails.R;
 import org.windycityrails.util.Network;
 
+import roboguice.util.Ln;
+
 import android.app.Service;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.IBinder;
-import android.util.Log;
 
 public class ConferenceDataService extends android.app.Service {
 	
@@ -30,7 +31,7 @@ public class ConferenceDataService extends android.app.Service {
     
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
-        Log.i(org.windycityrails.Constants.LOGTAG, ConferenceDataService.CLASSTAG + " Received start id " + startId + ": " + intent);
+        Ln.i(ConferenceDataService.CLASSTAG + " Received start id " + startId + ": " + intent);
         
         if(Network.isNetworkAvailable(getApplicationContext())) {
         	String baseUrl = getResources().getString(R.string.data_base_url);
@@ -45,10 +46,10 @@ public class ConferenceDataService extends android.app.Service {
 	            downloader.execute(urls);
 	            
 	        } catch (MalformedURLException e) {
-	            Log.e(org.windycityrails.Constants.LOGTAG, ConferenceDataService.CLASSTAG + " Bad URL", e);
+	            Ln.e(e, ConferenceDataService.CLASSTAG + " Bad URL", e);
 	        }
         } else {
-        	Log.i(org.windycityrails.Constants.LOGTAG, "Network not available so xml files not updated");
+        	Ln.i("Network not available so xml files not updated");
         }
 
         return Service.START_FLAG_REDELIVERY;
@@ -81,7 +82,7 @@ public class ConferenceDataService extends android.app.Service {
             	in = conn.getInputStream();
     			file = org.apache.commons.io.IOUtils.toString(in);
     		} catch (IOException e) {
-    			Log.e(org.windycityrails.Constants.LOGTAG,"IOException: ", e);
+    			Ln.e(e,"IOException: ", e);
     			return false;
     		}
         	
@@ -94,10 +95,10 @@ public class ConferenceDataService extends android.app.Service {
 	    			fos.close();
         		}
     		} catch (FileNotFoundException e) {
-    			Log.e(org.windycityrails.Constants.LOGTAG,"Output file not found.", e);
+    			Ln.e(e,"Output file not found.");
     			return false;
     		} catch (IOException e) {
-    			Log.e(org.windycityrails.Constants.LOGTAG,"IOException: ", e);
+    			Ln.e(e,"IOException: " + e.getMessage());
     			return false;
     		}
     		

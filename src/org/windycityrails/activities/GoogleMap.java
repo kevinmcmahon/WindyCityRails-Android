@@ -1,5 +1,7 @@
 package org.windycityrails.activities;
 
+import java.io.File;
+import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
@@ -11,11 +13,11 @@ import org.windycityrails.util.MapHelper;
 import org.windycityrails.util.XmlParser;
 
 import roboguice.activity.RoboMapActivity;
+import roboguice.util.Ln;
 
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
-import android.util.Log;
 
 import com.google.android.maps.GeoPoint;
 import com.google.android.maps.MapController;
@@ -35,7 +37,7 @@ public class GoogleMap extends RoboMapActivity {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		Log.v(Constants.LOGTAG, GoogleMap.CLASSTAG + " onCreate");
+		Ln.v(GoogleMap.CLASSTAG + " onCreate");
 
 		setContentView(R.layout.google_map);
 
@@ -67,16 +69,25 @@ public class GoogleMap extends RoboMapActivity {
 	}
 
 	private ArrayList<Location> getLocations() {
-		Log.v(Constants.LOGTAG, GoogleMap.CLASSTAG + " getLocation");
+		Ln.v(GoogleMap.CLASSTAG + " getLocation");
 		InputStream stream = null;
-		try {
-			stream = getAssets().open("locations.xml");
-		} catch (IOException e) {
-			// handle
-			android.util.Log.e(Constants.LOGTAG,
-					GoogleMap.CLASSTAG + " " + e.getMessage(), e);
-		}
-		return new XmlParser().parseLocationResponse(stream);
+		
+		String filename = getResources().getString(R.string.data_filename_locations);
+        try {
+        	File cachedFile = new File(getCacheDir(), filename);
+    		
+    		if(cachedFile.exists()) {
+    			Ln.i("Reading location data from cached copy.");
+    			stream = new FileInputStream(cachedFile);
+    		} else {
+    			Ln.i("Reading sessions data from assets.");
+    	        stream = getAssets().open(filename);
+    		}	
+        } catch (IOException e) {
+            // handle
+        	Ln.e(e,"SessionsActivity : "+ e.getMessage());
+        }
+        return new XmlParser().parseLocationResponse(stream);
 	}
 
 	@Override

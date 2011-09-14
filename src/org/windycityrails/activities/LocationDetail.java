@@ -15,6 +15,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 public class LocationDetail extends RoboActivity {
@@ -25,6 +26,7 @@ public class LocationDetail extends RoboActivity {
 	@InjectView(R.id.venue_location_detail) private TextView venueView;
 	@InjectView(R.id.address_location_detail) private TextView addressView;
 	@InjectView(R.id.directions_location_detail) private TextView directionsView;
+	@InjectView(R.id.location_details_container) private LinearLayout container;
 	
 	private Location location;
 	
@@ -45,6 +47,9 @@ public class LocationDetail extends RoboActivity {
         	Ln.v(LocationDetail.CLASSTAG + " photo text: "+ location.photo);
         	photoView.setImageUrl(location.photo);
         	photoView.loadImage();
+        } else {
+        	photoView.setVisibility(View.INVISIBLE);
+        	container.removeView(photoView);
         }
         
         directionsView.setOnClickListener(new OnClickListener() {
